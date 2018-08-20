@@ -304,7 +304,7 @@ class Model(object):
         return self.layers[-1].output, SLopeb, Slopew
 
     #Stochiastic Gradient Descent
-    def SGD(self, training_data, batch_size, eta, epochs, test_data = None):
+    def MBGD(self, training_data, batch_size, eta, epochs, test_data = None):
         training_data = list(training_data)
         if test_data:
             test_data = list(test_data)  
