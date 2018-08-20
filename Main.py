@@ -35,4 +35,4 @@ net = Model(input_shape,
                     'num_classes' : 10}}
             ])
 
-net.SGD(training_data, BATCH_SIZE, ETA, EPOCHS, test_data = list(test_data)[0:10])
+net.MBGD(training_data, BATCH_SIZE, ETA, EPOCHS, test_data = list(test_data)[0:10])
